@@ -1,0 +1,2 @@
+# JavaScript Projects
+Welcome to my JavaScript Programming repository! This repository contains a comprehensive collection of lab exercises, practical assignments, and hands-on projects completed during my studies at the Academy of Learning Career College (AOLCC). The goal of this course was to master core JavaScript concepts, transition from static HTML/CSS to dynamic web development, and build modern, interactive web applications.
