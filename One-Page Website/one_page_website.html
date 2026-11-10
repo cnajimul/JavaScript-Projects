@@ -1,0 +1,442 @@
+<<<<<<< HEAD
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wander More | Travel Inspiration</title>
+  <style>
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      color: #243238;
+      background: #f7faf9;
+    }
+
+    header {
+      padding: 2rem 1rem;
+      text-align: center;
+      color: white;
+      background: #176b68;
+    }
+
+    header h1 { margin: 0; font-size: 2.5rem; }
+
+    nav {
+      position: sticky;
+      top: 0;
+      padding: 1rem;
+      text-align: center;
+      background: #104e4c;
+    }
+
+    nav a {
+      margin: 0 0.8rem;
+      color: white;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    nav a:hover { text-decoration: underline; }
+
+    main {
+      width: min(100% - 2rem, 1000px);
+      margin: 2rem auto;
+    }
+
+    section {
+      margin-bottom: 3rem;
+      padding: 1.5rem;
+      background: white;
+      border-radius: 10px;
+    }
+
+    h2 { color: #176b68; }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1rem;
+    }
+
+    figure { margin: 0; }
+
+    figure img {
+      display: block;
+      width: 100%;
+      height: 190px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    figcaption { padding-top: 0.5rem; }
+
+    .video-wrap {
+      position: relative;
+      width: 100%;
+      padding-bottom: 56.25%;
+    }
+
+    .video-wrap iframe {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      border: 0;
+      border-radius: 8px;
+    }
+
+    form {
+      display: grid;
+      gap: 1rem;
+      max-width: 600px;
+    }
+
+    label { font-weight: bold; }
+
+    input, textarea, button {
+      width: 100%;
+      padding: 0.75rem;
+      font: inherit;
+    }
+
+    input, textarea {
+      border: 1px solid #aab8b7;
+      border-radius: 5px;
+    }
+
+    button {
+      border: 0;
+      border-radius: 5px;
+      color: white;
+      background: #176b68;
+      cursor: pointer;
+    }
+
+    button:hover { background: #104e4c; }
+
+    footer {
+      padding: 1.5rem;
+      text-align: center;
+      color: white;
+      background: #243238;
+    }
+
+    footer a { color: #b9e5df; }
+  </style>
+</head>
+<body>
+  <header id="home">
+    <h1>Wander More</h1>
+    <p>Find inspiration for your next great adventure.</p>
+  </header>
+
+  <nav aria-label="Main navigation">
+    <a href="#home">Home</a>
+    <a href="#destinations">Destinations</a>
+    <a href="#videos">Travel Videos</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <main>
+    <section aria-labelledby="welcome-heading">
+      <h2 id="welcome-heading">Welcome, Travelers!</h2>
+      <p>
+        Travel is a chance to discover new places, meet people, and experience
+        different cultures. Whether you are planning a weekend escape or a
+        longer journey, a little inspiration can help you find your next
+        destination.
+      </p>
+      <p>Explore the gallery, watch a travel video, and get in touch with us.</p>
+    </section>
+
+    <section id="destinations" aria-labelledby="destinations-heading">
+      <h2 id="destinations-heading">Destination Inspiration</h2>
+      <div class="gallery">
+        <figure>
+          <img
+            src="images/a.jfif"
+            alt="Mountain landscape beneath a colorful sunset">
+          <figcaption>Mountain escapes: fresh air and wide-open views.</figcaption>
+        </figure>
+        <figure>
+          <img
+            src="images/b.jfif"
+            alt="Tropical beach with clear water and palm trees">
+          <figcaption>Coastal getaways: slow down beside the sea.</figcaption>
+        </figure>
+        <figure>
+          <img
+            src="images/c.jfif"
+            alt="Historic city street with buildings and warm evening light">
+          <figcaption>City adventures: explore local streets and culture.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section id="videos" aria-labelledby="videos-heading">
+      <h2 id="videos-heading">See the World</h2>
+      <p>Take a moment to enjoy this travel film and start dreaming about your next trip.</p>
+      <div class="video-wrap">
+        <iframe
+          src="https://www.youtube-nocookie.com/embed/Scxs7L0vhZ4"
+          title="Travel inspiration video"
+          loading="lazy"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen>
+        </iframe>
+      </div>
+    </section>
+
+    <section id="contact" aria-labelledby="contact-heading">
+      <h2 id="contact-heading">Get in Touch</h2>
+      <p>Have a destination suggestion or a travel question? Send us a message.</p>
+      <form action="#" method="post">
+        <div>
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div>
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div>
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Wander More. Keep exploring.</p>
+    <p><a href="#home">Back to top</a></p>
+  </footer>
+</body>
+=======
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wander More | Travel Inspiration</title>
+  <style>
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      color: #243238;
+      background: #f7faf9;
+    }
+
+    header {
+      padding: 2rem 1rem;
+      text-align: center;
+      color: white;
+      background: #176b68;
+    }
+
+    header h1 { margin: 0; font-size: 2.5rem; }
+
+    nav {
+      position: sticky;
+      top: 0;
+      padding: 1rem;
+      text-align: center;
+      background: #104e4c;
+    }
+
+    nav a {
+      margin: 0 0.8rem;
+      color: white;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    nav a:hover { text-decoration: underline; }
+
+    main {
+      width: min(100% - 2rem, 1000px);
+      margin: 2rem auto;
+    }
+
+    section {
+      margin-bottom: 3rem;
+      padding: 1.5rem;
+      background: white;
+      border-radius: 10px;
+    }
+
+    h2 { color: #176b68; }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1rem;
+    }
+
+    figure { margin: 0; }
+
+    figure img {
+      display: block;
+      width: 100%;
+      height: 190px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    figcaption { padding-top: 0.5rem; }
+
+    .video-wrap {
+      position: relative;
+      width: 100%;
+      padding-bottom: 56.25%;
+    }
+
+    .video-wrap iframe {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      border: 0;
+      border-radius: 8px;
+    }
+
+    form {
+      display: grid;
+      gap: 1rem;
+      max-width: 600px;
+    }
+
+    label { font-weight: bold; }
+
+    input, textarea, button {
+      width: 100%;
+      padding: 0.75rem;
+      font: inherit;
+    }
+
+    input, textarea {
+      border: 1px solid #aab8b7;
+      border-radius: 5px;
+    }
+
+    button {
+      border: 0;
+      border-radius: 5px;
+      color: white;
+      background: #176b68;
+      cursor: pointer;
+    }
+
+    button:hover { background: #104e4c; }
+
+    footer {
+      padding: 1.5rem;
+      text-align: center;
+      color: white;
+      background: #243238;
+    }
+
+    footer a { color: #b9e5df; }
+  </style>
+</head>
+<body>
+  <header id="home">
+    <h1>Wander More</h1>
+    <p>Find inspiration for your next great adventure.</p>
+  </header>
+
+  <nav aria-label="Main navigation">
+    <a href="#home">Home</a>
+    <a href="#destinations">Destinations</a>
+    <a href="#videos">Travel Videos</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <main>
+    <section aria-labelledby="welcome-heading">
+      <h2 id="welcome-heading">Welcome, Travelers!</h2>
+      <p>
+        Travel is a chance to discover new places, meet people, and experience
+        different cultures. Whether you are planning a weekend escape or a
+        longer journey, a little inspiration can help you find your next
+        destination.
+      </p>
+      <p>Explore the gallery, watch a travel video, and get in touch with us.</p>
+    </section>
+
+    <section id="destinations" aria-labelledby="destinations-heading">
+      <h2 id="destinations-heading">Destination Inspiration</h2>
+      <div class="gallery">
+        <figure>
+          <img
+            src="images/a.jfif"
+            alt="Mountain landscape beneath a colorful sunset">
+          <figcaption>Mountain escapes: fresh air and wide-open views.</figcaption>
+        </figure>
+        <figure>
+          <img
+            src="images/b.jfif"
+            alt="Tropical beach with clear water and palm trees">
+          <figcaption>Coastal getaways: slow down beside the sea.</figcaption>
+        </figure>
+        <figure>
+          <img
+            src="images/c.jfif"
+            alt="Historic city street with buildings and warm evening light">
+          <figcaption>City adventures: explore local streets and culture.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section id="videos" aria-labelledby="videos-heading">
+      <h2 id="videos-heading">See the World</h2>
+      <p>Take a moment to enjoy this travel film and start dreaming about your next trip.</p>
+      <div class="video-wrap">
+        <iframe
+          src="https://www.youtube-nocookie.com/embed/Scxs7L0vhZ4"
+          title="Travel inspiration video"
+          loading="lazy"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen>
+        </iframe>
+      </div>
+    </section>
+
+    <section id="contact" aria-labelledby="contact-heading">
+      <h2 id="contact-heading">Get in Touch</h2>
+      <p>Have a destination suggestion or a travel question? Send us a message.</p>
+      <form action="#" method="post">
+        <div>
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div>
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div>
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Wander More. Keep exploring.</p>
+    <p><a href="#home">Back to top</a></p>
+  </footer>
+<script src="JS/one_page_website.js" defer></script>
+</body>
+</html>

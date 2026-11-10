@@ -1,0 +1,38 @@
+.lightbox {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  background: rgb(0 0 0 / 90%);
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.lightbox.open {
+  display: flex;
+}
+
+.lightbox-image {
+  max-width: 85vw;
+  max-height: 75vh;
+  object-fit: contain;
+}
+
+.lightbox-caption {
+  color: white;
+  margin: 12px;
+}
+
+.lightbox button {
+  position: absolute;
+  border: 0;
+  background: transparent;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.lightbox-close { top: 16px; right: 24px; }
+.lightbox-prev { left: 20px; }
+.lightbox-next { right: 20px; }
